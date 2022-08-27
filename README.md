@@ -92,4 +92,4 @@ Crie um algoritmo que contém uma lista de números entre 0 e 10, então, solici
 Exemplo de vetor ordenado: `vetor[10] = {0,1,2,3,4,5,6,7,8,9};`
 A busca binária localiza o meio do vetor com a fórmula (Inicio + Fim) / 2, sendo Inicio a primeira posição do vetor e Fim a ultima posição do vetor. Levando em consideração o exemplo vetor[10] teríamos: (1+10) /2 = 5,5. Em C este valor seria passado para 5, pois ao armazena-lo como inteiro (int) as casas decimais são ignoradas.
 Tendo em mãos o meio (5) do vetor ordenado o algoritmo verifica se o valor procurando é ele, se não for ele verificará se é maior ou menor que ele. Sendo maior, a busca será feita apenas na parte direita da metade, se menor, a busca será realizada na parte da esquerda:
-![Busca binária](.\imgs\BuscaBinaria_exemplo.jpg "Busca binária")
+![Busca binária](/imgs/BuscaBinaria_exemplo.jpg "Busca binária")
