@@ -76,20 +76,47 @@ Sugiro que você já conheça de forma básica:
 15. *(Recursão)* Os números de Fibonacci compõem a seguinte sequência: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,... Ou seja, a composição é formada por números que são o resultado da soma dos dois anteriores. Faça um programa que imprima em tela os próximos N número da sequência de Fibonacci, onde N é um número informado pelo usuário de 1 à 30.
 
 ------------
-16. Palíndromos são frases ou palavras que podem ser lidas, indiferentemente, da esquerda para a direita, conforme o sentido habitual da leitura, ou da direita para a esquerda, sem que haja mudança da sua significação. Exemplos: arara, ana, ama, mirim, oco, ovo, osso, ralar, rapar, reter, reviver, rodador, salas, socos, etc.
+16. *(Strings)* Palíndromos são frases ou palavras que podem ser lidas, indiferentemente, da esquerda para a direita, conforme o sentido habitual da leitura, ou da direita para a esquerda, sem que haja mudança da sua significação. Exemplos: arara, ana, ama, mirim, oco, ovo, osso, ralar, rapar, reter, reviver, rodador, salas, socos, etc.
 Escreva um algoritmo que recebe uma palavra, indentifique se a palavra é um palíndromo e, se palíndromo, retorne para o usuário "É palíndromo" e se não for retornar "Não é palíndromo".
 
 ------------
-17. Crie um algoritmo que simule um dado de 6 lados. Ou seja, ao abrir o programa o usuário irá tirar aleatóriamente um número entre 1 e 6.
+17. *(Strings)* Crie um algoritmo que receba uma palavra e conte a quantidade de caracteres e escreva em tela.
 
 ------------
-18. (Busca sequencial) A busca linear ou busca sequencial é a forma mais simples de se buscar um resultado em uma lista de dados. O vetor é percorrido comparando cada dado do vetor até encontrar o resultado desejado e retornando o índice do valor encontrado. O dado a ser encontrado é passado como parâmetro para função. O melhor caso nessa situação é se o dado que está sendo procurando é a primeira opção do vetor, e o pior resultado ocorre se este for o ultimo dado do vetor. A complexidade da busca linear é O(n).
+18. *(Strings)* Crie um algoritmo que receba três palavras concatene todas elas em uma quarta variável e escreva o resultado.
+
+------------
+19. *(Strings)* Crie um algoritmo que receba duas palavras e verifique se as duas são iguais.
+
+------------
+20. *(Strings)* Crie um algoritmo que receba duas palavras e verifique se as duas são iguais ignorando diferenças entre letras maiúsculas ou minúsculas.
+- Exemplos:
+    - Ao comparar **Gato** com **gato** deve informar que são iguais.
+    - Ao comparar **CACHORRO** com **cachorro** deve informar que são iguais.
+
+------------
+21. *(Strings)* Crie um algoritmo que receba uma frase e uma palavra, então verifique se há ocorrência da palavra na frase e, se houver imprima "Palavra encontrada", se não imprima "Palavra não encontrada".
+
+------------
+22. Crie um algoritmo que simule um dado de 6 lados. Ou seja, ao abrir o programa o usuário irá tirar aleatóriamente um número entre 1 e 6.
+
+------------
+23. (Busca sequencial) A busca linear ou busca sequencial é a forma mais simples de se buscar um resultado em uma lista de dados. O vetor é percorrido comparando cada dado do vetor até encontrar o resultado desejado e retornando o índice do valor encontrado. O dado a ser encontrado é passado como parâmetro para função. O melhor caso nessa situação é se o dado que está sendo procurando é a primeira opção do vetor, e o pior resultado ocorre se este for o ultimo dado do vetor. A complexidade da busca linear é O(n).
 Crie um algoritmo que contém uma lista de números entre 0 e 10, então, solicite um número para o usuário entre 0 e 10 e verifique se o número existe na lista. Se o número existir, imprima "Número encontrado", se não existir imprima "Número não encontrado".
     - Exemplo de lista de números: `{9,7,5,2,4,6,10,1,8}`.
 
 ------------
-19. (Busca binária) A busca binária tem o mesmo objetivo da busca linear, seu tempo de busca é muito mais otimizado que o da busca linear, no entanto, para seu funcionamento, o vetor deve estar ordenado.
+24. (Busca binária) A busca binária tem o mesmo objetivo da busca linear, seu tempo de busca é muito mais otimizado que o da busca linear, no entanto, para seu funcionamento, o vetor deve estar ordenado.
 Exemplo de vetor ordenado: `vetor[10] = {0,1,2,3,4,5,6,7,8,9};`
 A busca binária localiza o meio do vetor com a fórmula (Inicio + Fim) / 2, sendo Inicio a primeira posição do vetor e Fim a ultima posição do vetor. Levando em consideração o exemplo vetor[10] teríamos: (1+10) /2 = 5,5. Em C este valor seria passado para 5, pois ao armazena-lo como inteiro (int) as casas decimais são ignoradas.
 Tendo em mãos o meio (5) do vetor ordenado o algoritmo verifica se o valor procurando é ele, se não for ele verificará se é maior ou menor que ele. Sendo maior, a busca será feita apenas na parte direita da metade, se menor, a busca será realizada na parte da esquerda:
+
 ![Busca binária](/imgs/BuscaBinaria_exemplo.jpg "Busca binária")
+
+O vetor vai sendo divido até que o valor seja encontrado. Se o valor não existir a condição de parada será quando o inicio e o fim for igual e nada foi encontrado.
+Crie um algoritmo que implemente a busca binária.
+
+------------
+25. (Ordenação) Crie uma função que recebe uma lista de inteiros desordenados e retorne a lista com os mesmos inteiros ordenados. 
+
+------------
